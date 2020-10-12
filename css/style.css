@@ -1,0 +1,32 @@
+/* Нужно подключать внешним файлом правила сброса настроек браузера reset ccs / normalize css */
+*{
+    margin: 0;
+    padding: 0;
+    /* font-size: 100%; потом поговорим */
+    box-sizing: border-box;
+} 
+
+.header{
+    background: greenyellow;
+    padding: 20px 0; /* для выравнивания по вертикали*/ 
+}
+
+.navigation_menu{
+    display: block;
+    width: 720px;
+    margin: 0 auto; /* для выравнивания по горизонтали*/ 
+}
+
+.menu .menu-item{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 15px;
+    border: grey solid 2px;
+}
+
+.menu-link{
+    font-size: 22px;
+    color: honeydew;
+    text-decoration: none;
+    text-transform: uppercase;
+}
