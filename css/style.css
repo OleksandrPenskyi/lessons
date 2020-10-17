@@ -29,4 +29,10 @@
     color: honeydew;
     text-decoration: none;
     text-transform: uppercase;
+    line-height: 1.0;
+}
+
+p{
+    font-size: 20px;
+    line-height: 1.6;
 }
