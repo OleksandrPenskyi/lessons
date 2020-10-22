@@ -1,38 +1,32 @@
-/* Нужно подключать внешним файлом правила сброса настроек браузера reset ccs / normalize css */
-*{
-    margin: 0;
-    padding: 0;
-    /* font-size: 100%; потом поговорим */
-    box-sizing: border-box;
-} 
-
-.header{
-    background: greenyellow;
-    padding: 20px 0; /* для выравнивания по вертикали*/ 
+.flex-container {
+  display: flex;
+  justify-content: center;
 }
 
-.navigation_menu{
-    display: block;
-    width: 720px;
-    margin: 0 auto; /* для выравнивания по горизонтали*/ 
+.flex-item {
+  width: 25%;
+  height: 100px;
+  border: 1px solid black;
+  background: red;
+  font-size: 40px;
+  font-weight: 600;
 }
 
-.menu .menu-item{
-    list-style-type: none;
-    display: inline-block;
-    margin: 0 15px;
-    border: grey solid 2px;
+.flex-item:nth-child(2n + 1) {
+  background: silver;
 }
 
-.menu-link{
-    font-size: 22px;
-    color: honeydew;
-    text-decoration: none;
-    text-transform: uppercase;
-    line-height: 1.0;
-}
+/* смена места в строке */
+/* .fi2 {
+  order: -1;
+} */
 
-p{
-    font-size: 20px;
-    line-height: 1.6;
-}
+/* все оставлшееся место отдает 3-й колонке */
+/* .fi3 {
+  flex-grow: 1;
+} */
+
+/* basis важнее чем width    */
+/* .fi2 {
+  flex-basis: 100px;
+} */
